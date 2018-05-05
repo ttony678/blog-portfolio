@@ -1,0 +1,29 @@
+{
+  "name": "blog-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttony678/blog-portfolio.git"
+  },
+  "author": "Luis Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttony678/blog-portfolio/issues"
+  },
+  "homepage": "https://github.com/ttony678/blog-portfolio#readme"
+}
