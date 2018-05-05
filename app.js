@@ -23,14 +23,14 @@ const users = require('./routes/users');
 // Needed to get values from req.body
 // app.use(express.json());
 
+// Body parser middleware
+app.use(bodyParser.json())
+
 // CORS middleware
 app.use(cors());
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Body parser middleware
-app.use(bodyParser.json())
 
 app.use('/users', users);
 
