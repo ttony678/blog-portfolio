@@ -24,7 +24,12 @@ const users = require('./routes/users');
 // app.use(express.json());
 
 // Body parser middleware
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+require('./config/passport')(passport);
 
 // CORS middleware
 app.use(cors());
